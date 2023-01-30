@@ -1,0 +1,35 @@
+.wrap{
+    position: relative;
+}
+
+.content{
+    position: relative;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.git-image{
+    opacity: 0.05;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80vh;
+}
+
+.repo-title{
+    font-size: 32px;
+    color: #cdd9e5b3;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repo-title span{
+    font-size: 16px;
+    margin-inline: 16px;
+    padding: 10px;
+    background-color: #2d333b;
+    border: solid 1px #cdd9e51a;
+    border-radius: 16px;
+}

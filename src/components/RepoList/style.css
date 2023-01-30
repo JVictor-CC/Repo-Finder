@@ -1,0 +1,15 @@
+.repo-list{
+    margin: 24px;
+}
+
+.repo-list h1{
+    color: #539bf5;
+    font-size: 24px;
+    margin: 24px 0 16px;
+}
+
+.repo-list p{
+    color: #6a717a;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
