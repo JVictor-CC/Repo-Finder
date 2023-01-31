@@ -1,15 +1,96 @@
 .repo-list{
     margin: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.repo-list h1{
+.repo-list > div:first-child{
+    margin-right: 20px;
+}
+
+.repo-list > div:last-child{
+    margin-top: 10px;
+}
+
+.repo-title{
+    text-align: left;
+    text-decoration: none;
     color: #539bf5;
     font-size: 24px;
     margin: 24px 0 16px;
 }
 
-.repo-list p{
+.repo-title:hover{
+    text-decoration: underline;
+}
+
+.repo-description{
     color: #6a717a;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.topic-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topics{
+    padding: 5px 10px;
+    margin: 5px 14px 5px 0px;
+    color: #539bf5;
+    background-color: #4185e45b;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+
+    flex: 1;
+    text-align: center;
+}
+
+.topics:hover{
+    color: #cdd9e5;
+    background-color: #316dca;
+    transition: 0.3s;
+}
+
+.repo-info{
+    font-size: 14px;
+    color: #adbac7;
+    background-color: #373e47;
+    border: solid 1px #cdd9e51a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-info:hover{
+    background-color: #444c56;
+    border-color: #768390;
+}
+
+.repo-info span{
+    padding: 3px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo-language{
+    color: #6a717a;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 430px){
+    .repo-info span{
+        padding: 5px;
+    }
+
+    .repo-list{
+        margin: 24px 5px;
+    }
 }

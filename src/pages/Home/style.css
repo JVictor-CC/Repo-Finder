@@ -9,14 +9,14 @@
 }
 
 .git-image{
-    opacity: 0.05;
-    position: absolute;
-    left: 0;
-    top: 0;
+    opacity: 0.02;
+    position: fixed;
+    left: -250px;
+    top: 80px;
     height: 80vh;
 }
 
-.repo-title{
+.list-title{
     font-size: 32px;
     color: #cdd9e5b3;
     margin: 20px 0;
@@ -25,11 +25,17 @@
     align-items: center;
 }
 
-.repo-title span{
+.list-title span{
     font-size: 16px;
     margin-inline: 16px;
     padding: 10px;
     background-color: #2d333b;
     border: solid 1px #cdd9e51a;
     border-radius: 16px;
+}
+
+@media only screen and (max-width: 600px){
+    .content{
+        width: 95%;
+    }
 }

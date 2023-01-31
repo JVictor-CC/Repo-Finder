@@ -11,7 +11,10 @@ const Input = ({inputLabel, buttonLabel, user, onChangeUser, buttonFunction}) =>
 
   return (
     <div className="search-container">
-      <input type="text" name="searchbar" value={user} onChange={handleInputChange} className='search-bar' placeholder={inputLabel}/>
+      <input type="text" name="searchbar" value={user} onChange={handleInputChange} 
+      className='search-bar' onKeyDown={(e) => {if(e.key === 'Enter'){buttonFunction()}}} 
+      placeholder={inputLabel}
+      />
       <button onClick={buttonFunction}>{buttonLabel}</button>
     </div>
     

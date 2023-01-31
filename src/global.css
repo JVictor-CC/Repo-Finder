@@ -9,6 +9,7 @@ body{
 }
 
 hr{
+    margin-top: 15px;
     background-color: #e5e5e533;
     border: solid 1px #e5e5e533;
 }

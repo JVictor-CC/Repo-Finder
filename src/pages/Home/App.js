@@ -20,7 +20,6 @@ function App() {
     if(newUser.name){
       const {avatar_url, name, bio, public_repos, login} = newUser
       setCurrentUser({avatar_url, name, bio, public_repos, login} )
-      console.log({avatar_url, name, bio, public_repos, login})
     }
 
     const reposData = await fetch(`https://api.github.com/users/${user}/repos`)
@@ -28,7 +27,6 @@ function App() {
 
     if(newRepos.length){
       setRepos(newRepos);
-      console.log(newRepos)
     }
   }
 
@@ -51,11 +49,15 @@ function App() {
             />
             <hr/>
             {repos?.length ? (<>
-              <h1 className="repo-title">Repositórios<span>{currentUser.public_repos}</span></h1>
+              <h1 className="list-title">Repositories<span>{currentUser.public_repos}</span></h1>
               {repos.map(repo => (
-                <RepoList title={repo.name} description={repo.description} />
+                <RepoList user={currentUser.login} title={repo.name} 
+                description={repo.description} topics={repo.topics}
+                stars={repo.stargazers_count} forks={repo.forks_count}
+                watchers={repo.watchers_count} language={repo.language}
+                />
               ))}
-            </>) : (<h1 className="repo-title">User has no repositories.</h1>)}   
+            </>) : (<h1 className="list-title">User has no repositories.</h1>)}   
           </>) : null}
           
         </div>
