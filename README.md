@@ -5,12 +5,12 @@ A github account finder that lists repositories
 ## Snapshots
 
 <p align='center'>
-  <img width='90%' src='readme_img/RepoFinder.png'>
+  <img width='90%' src='readme_gif/RepoFinder.gif'>
 </p>
 
 ## Links
 
-Watch it in action [here]()
+Watch it in action [here](https://repo-finder-7jyqzj2kn-jvictor-cc.vercel.app/)
 
 ## Features
 
