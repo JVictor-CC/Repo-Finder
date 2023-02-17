@@ -19,8 +19,6 @@ Watch it in action [here](https://repo-finder-7jyqzj2kn-jvictor-cc.vercel.app/)
 * Displays repository info (Name, Description, Topics, Most used languages...)
 * Link to the repository
 * Link to each topic
-* Error messages
-* Disabled submit button while validation fails
 
 ## Built With
 
